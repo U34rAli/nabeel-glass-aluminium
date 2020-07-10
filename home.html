@@ -62,7 +62,7 @@
                          <li><a href="#contact" class="smoothScroll">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#">Say hello - <span>info@soft.co</span></a></li>
+                         <li><a href="#">Say hello - <span>nabeel@gmail.com</span></a></li>
                     </ul>
                </div>
 
@@ -78,11 +78,11 @@
 
                     <div class="col-md-offset-3 col-md-6 col-sm-12">
                          <div class="home-info">
-                              <h3>professional landing page</h3>
-                              <h1>We help you manage your website successfully!</h1>
+                              <h3>professional Glass and Aluminium Work</h3>
+                              <h1>We will help you to bring reinovation to your life!</h1>
                               <form action="" method="get" class="online-form">
-                                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-                                   <button type="submit" class="form-control">Get started</button>
+                                   <input type="email" name="email" class="form-control" placeholder="+92 310 4752640" required>
+                                   <button type="submit" class="form-control">Contact</button>
                               </form>
                          </div>
                     </div>
@@ -99,7 +99,7 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title">
-                              <h1>What you get</h1>
+                              <h1>What we deal</h1>
                          </div>
                     </div>
 
@@ -156,7 +156,7 @@
 
                     <div class="col-md-6 col-sm-6">
                          <div class="feature-image">
-                              <img src="images/feature-mockup.png" class="img-responsive" alt="Thin Laptop">                             
+                              <img src="images/feature-mockup.jpg" id = "feature_image_slider" class="img-responsive" alt="Thin Laptop">                             
                          </div>
                     </div>
 
@@ -402,5 +402,20 @@
      <!-- ManyChat -->
      <!-- ManyChat -->
      <script src="//widget.manychat.com/1561935417453982.js" async="async"></script>
+     <script>
+          var imageSources = ["images/feature-mockup.jpg",
+           "images/feature-image-slider-2.jpg",
+           "images/feature-image-slider-3.jpg"]
+    
+          var index = 0;
+          setInterval(function(){
+            if (index === imageSources.length) {
+              index = 0;
+            }
+            document.getElementById("feature_image_slider").src = imageSources[index];
+            index++;
+          }, 5000);
+        </script>
+    
 </body>
 </html>
