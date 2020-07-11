@@ -14,18 +14,6 @@ body {
   background: #f9f9f9;
 }
 
-/* 
-  
-  */
-.same-line {
-  height: 10px; /*childrens it's all absolute position, so must set height*/
-  position: relative;
-}
-.same-line div {
-  display: inline-block;
-  position: absolute;
-}
-
 /*---------------------------------------
      TYPOGRAPHY              
   -----------------------------------------*/
@@ -802,7 +790,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .online-form input[type="email"],
+  .online-form input[type="text"],
   .online-form .form-control {
     width: 85%;
   }
